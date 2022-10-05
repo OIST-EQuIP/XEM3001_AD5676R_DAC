@@ -1,0 +1,8 @@
+
+XEM3001v2(JP2)      AD5676R(J5)
+ 1						GND
+ 5						SCLK
+ 6						DIN
+ 7						RESET
+ 8						SYNC
+11						LDAC
