@@ -23,22 +23,22 @@ How to use:
         Add "<FP_root>\API\lib\x64" and "<FP_root>\API\Python\3.7\x64" to PATH. 
         Add "<FP_root>\API\Python\3.7\x64" to PYTHONPATH 
   After that, Python is good to run following command:
-  >>> import ok
+   import ok
 (3) Python module for DAC and the .bit file
   Put files XEM3001_AD5676R_DAC.py and ad5676r_dac.bit under the same directory with user's codes.
 
 2, End user code examples
 (1) input voltage in float value
-  >>>import XEM3001_AD5676R_DAC
-  >>>mydac = XEM3001_AD5676R_DAC.XEM3001_AD5676R_DAC()
-  >>>channel = 1
-  >>>volt = 1.056 #default, input as float voltage 
-  >>>mydac.dac(channel, volt) #channel 1 will output 1.056V.
+  import XEM3001_AD5676R_DAC
+  mydac = XEM3001_AD5676R_DAC.XEM3001_AD5676R_DAC()
+  channel = 1
+  volt = 1.056 #default, input as float voltage 
+  mydac.dac(channel, volt) #channel 1 will output 1.056V.
 
 (2) input voltage in hex value (range: 0x0000 ~ 0xffff)
-  >>>import XEM3001_AD5676R_DAC
-  >>>mydac = XEM3001_AD5676R_DAC.XEM3001_AD5676R_DAC()
-  >>>channel = 5
-  >>>mydac.input_type = 2 #input in hex
-  >>>volt = 0x3fff #for voltage range 0.0 ~ 5.0v, it means 0x3fff * 5.0 / 0xffff = 1.249943V
-  >>>mydac.dac(channel, volt) #channel 5 will output 1.249943V.
+  import XEM3001_AD5676R_DAC
+  mydac = XEM3001_AD5676R_DAC.XEM3001_AD5676R_DAC()
+  channel = 5
+  mydac.input_type = 2 #input in hex
+  volt = 0x3fff #for voltage range 0.0 ~ 5.0v, it means 0x3fff * 5.0 / 0xffff = 1.249943V
+  mydac.dac(channel, volt) #channel 5 will output 1.249943V.
