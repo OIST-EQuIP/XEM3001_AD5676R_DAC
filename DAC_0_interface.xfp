@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<resource version="2.3.0.1">
+
+<object class="okPanel" name="panel1">
+	<title>Test AD5676R DAC</title>
+	<size>500,300</size>
+	<object class="okStaticText">
+	   <label>Hello DAC. Digital input:</label>
+	</object>
+    
+	
+	<object class="okStaticText">
+	   <position>30,50</position>
+	   <label>ep00: digital value</label>
+	</object>
+	<object class="okDigitEntry">
+		<position>30,80</position>
+		<size>80,25</size>
+		<tooltip>ep00</tooltip>
+		<radix>16</radix>
+		<minvalue>0</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x00</endpoint>
+		<bit>0</bit>
+		<value>0xACF1</value>
+	</object>
+	
+	<object class="okStaticText">
+	   <position>30,135</position>
+	   <label>ep20: digital value display</label>
+	</object>
+	<object class="okDigitDisplay">
+		<position>30,160</position>
+		<size>80,25</size>
+		<tooltip>ep20</tooltip>
+		<radix>16</radix>
+		<minvalue>0</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x20</endpoint>
+		<bit>0</bit>
+	</object>
+	
+	
+	<object class="okStaticText">
+	   <position>200,50</position>
+	   <label>ep01: command, address</label>
+	</object>
+	<object class="okDigitEntry">
+		<position>200,80</position>
+		<size>80,25</size>
+		<tooltip>ep01</tooltip>
+		<radix>16</radix>
+		<minvalue>0</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x01</endpoint>
+		<bit>0</bit>
+		<value>0x0011</value>
+	</object>
+	
+	<object class="okStaticText">
+	   <position>200,135</position>
+	   <label>ep21: command address display</label>
+	</object>
+	<object class="okDigitDisplay">
+		<position>200,160</position>
+		<size>80,25</size>
+		<tooltip>ep21</tooltip>
+		<radix>16</radix>
+		<minvalue>0</minvalue>
+		<maxvalue>65535</maxvalue>
+		<endpoint>0x21</endpoint>
+		<bit>0</bit>
+	</object>
+
+</object>
+
+
+
+</resource>
