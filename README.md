@@ -8,7 +8,7 @@ What are those files:
 2, top.v: the top circuit on FPGA, using Opal Kelly FrontPanel framework to pass command and data from PC to the DAC circuit.  
 3, dac_tb.v: test bench to simulate the above implementation.  
 4, DAC_0.ucf: FPGA constraint file.  
-5, DAC_0.xpf: a GUI written in XML, supported by Opel Kelly FrontPanel API, to test the DAC.  
+5, DAC_0_interface.xfp: a GUI written in XML, supported by Opel Kelly FrontPanel API, to test the DAC.  
 6, ad5676r_dac.bit: the .bit file (binary file) created from AD5676R.v, top.v, and DAC_0.ucf, by ISE14.7 SDK.  
 7, XEM3001_AD5676R_DAC.py: a Python module for end user. It uses Opel Kelly FrontPanel API to control the DAC.  
 
